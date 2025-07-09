@@ -1,61 +1,189 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+# ============================================================================
+# Flutter/Dart Project .gitignore
+# ============================================================================
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
+# ============================================================================
+# Flutter & Dart Core
+# ============================================================================
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# Dart/Flutter build artifacts
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
 /build/
+.metadata
+pubspec.lock
 
-# Symbolication related
-app.*.symbols
+# Flutter specific
+**/doc/api/
+**/ios/Flutter/.last_build_id
+migrate_working_dir/
 
-# Obfuscation related
-app.*.map.json
+# Analysis and linting
+analysis_options.yaml
 
-# Android Studio will place build artifacts here
+# ============================================================================
+# Platform-Specific Directories
+# ============================================================================
+
+# Mobile platforms
+/ios
+/android
+
+# Desktop platforms
+/windows
+/linux
+/macos
+
+# Web platform
+/web
+
+# ============================================================================
+# Build Artifacts & Release Files
+# ============================================================================
+
+# Android build artifacts
 /android/app/debug
 /android/app/profile
 /android/app/release
 
-/ios
+# Symbolication files
+app.*.symbols
 
-/android
+# Obfuscation files
+app.*.map.json
 
-/windows
+# ============================================================================
+# IDE & Editor Configuration
+# ============================================================================
 
-/linux
+# IntelliJ IDEA / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
 
-/macos
+# Visual Studio Code
+# Uncomment if you want to ignore VS Code settings
+#.vscode/
 
-/web
-.metadata
-analysis_options.yaml
-pubspec.lock
+# Atom Editor
+.atom/
+
+# ============================================================================
+# Operating System Files
+# ============================================================================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ============================================================================
+# Version Control & History
+# ============================================================================
+
+# Subversion
+.svn/
+
+# Build history
+.history
+.buildlog/
+
+# Swift Package Manager
+.swiftpm/
+
+# ============================================================================
+# Temporary & Cache Files
+# ============================================================================
+
+# General temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
+
+# Compiled files
+*.class
+*.pyc
+*.pyo
+
+# Build directories
+.build/
+build/
+dist/
+
+# ============================================================================
+# Environment & Configuration
+# ============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.*.local
 assets/.env
+
+# Configuration files with sensitive data
+config/secrets.yaml
+config/keys.yaml
+
+# ============================================================================
+# Dependencies & Packages
+# ============================================================================
+
+# Node modules (if using any web dependencies)
+node_modules/
+
+# Python packages (if using any Python tools)
+__pycache__/
+*.egg-info/
+
+# ============================================================================
+# Testing & Coverage
+# ============================================================================
+
+# Test coverage reports
+coverage/
+.nyc_output/
+
+# Test artifacts
+test_driver/screenshots/
+integration_test/screenshots/
+
+# ============================================================================
+# Documentation
+# ============================================================================
+
+# Generated documentation
+doc/api/
+docs/build/
+
+# ============================================================================
+# Miscellaneous
+# ============================================================================
+
+# Backup files
+*.bak
+*.backup
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
