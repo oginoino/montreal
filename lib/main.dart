@@ -3,7 +3,12 @@ import '../utils/common_libs.dart';
 Future<void> main() async {
   try {
     await Bootstrap.initialize();
-    runApp(MontrealApp());
+    runApp(
+      MultiProvider(
+        providers: RegisterProvider.registerProviders(),
+        child: const MontrealApp(),
+      ),
+    );
   } catch (error) {
     debugPrint('Error initializing app: $error');
   } finally {

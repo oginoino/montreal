@@ -5,14 +5,18 @@ class MontrealApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
-      onGenerateTitle: (BuildContext context) => appConstants.appName,
-      title: appConstants.appTitle,
-      routerDelegate: appRouter.routerDelegate,
-      routeInformationProvider: appRouter.routeInformationProvider,
-      routeInformationParser: appRouter.routeInformationParser,
-      debugShowCheckedModeBanner: false,
-      theme: uiConstants.theme,
+    return Consumer<ThemeProvider>(
+      builder: (context, themeProvider, child) {
+        return MaterialApp.router(
+          onGenerateTitle: (BuildContext context) => appConstants.appName,
+          title: appConstants.appTitle,
+          routerDelegate: appRouter.routerDelegate,
+          routeInformationProvider: appRouter.routeInformationProvider,
+          routeInformationParser: appRouter.routeInformationParser,
+          debugShowCheckedModeBanner: false,
+          theme: themeProvider.currentTheme,
+        );
+      },
     );
   }
 }

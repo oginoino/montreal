@@ -11,6 +11,12 @@ export 'package:google_fonts/google_fonts.dart';
 //Get It
 export 'package:get_it/get_it.dart';
 
+// Provider
+export 'package:provider/provider.dart';
+export 'package:provider/single_child_widget.dart';
+export '../providers/register_provider.dart';
+export '../providers/theme_provider.dart';
+
 // App
 export '../app/montreal_app.dart';
 
@@ -45,6 +51,7 @@ export 'package:montreal/utils/constants/ui_constants.dart';
 // VIEW
 // Theme
 export '../view/theme/light_theme.dart';
+export '../view/theme/dark_theme.dart';
 
 //Pages
 export '../view/page/home_page.dart';
