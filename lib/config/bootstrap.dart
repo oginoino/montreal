@@ -1,6 +1,5 @@
 import '../utils/common_libs.dart';
 
-
 class Bootstrap {
   Bootstrap._();
 
