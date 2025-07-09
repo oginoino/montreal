@@ -1,16 +1,41 @@
-# montreal
+# Montreal
 
-A new Flutter project.
+Este é um projeto Flutter que demonstra a estrutura básica de uma aplicação Flutter.
 
-## Getting Started
+## Estrutura do Projeto
 
-This project is a starting point for a Flutter application.
+Este projeto segue a estrutura padrão recomendada para aplicações Flutter:
 
-A few resources to get you started if this is your first Flutter project:
+```
+lib/
+├── app/                 # Configuração principal da aplicação
+├── config/             # Configurações de bootstrap, DI e ambiente
+├── providers/          # Gerenciamento de estado
+├── route/              # Sistema de roteamento
+├── services/           # Serviços e APIs
+├── utils/              # Utilitários e constantes
+└── view/               # Interface do usuário
+    ├── component/      # Componentes reutilizáveis
+    ├── page/          # Páginas da aplicação
+    └── theme/         # Temas e estilos
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Características
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Arquitetura modular**: Organização clara de responsabilidades
+- **Sistema de roteamento**: Navegação estruturada entre telas
+- **Injeção de dependência**: Configuração centralizada de serviços
+- **Gerenciamento de estado**: Usando providers para estado reativo
+- **Temas customizados**: Sistema de design consistente
+
+## Como Executar
+
+1. Certifique-se de ter o Flutter instalado
+2. Execute `flutter pub get` para instalar as dependências
+3. Execute `flutter run` para iniciar a aplicação
+
+## Recursos Úteis
+
+- [Documentação oficial do Flutter](https://docs.flutter.dev/)
+- [Cookbook Flutter](https://docs.flutter.dev/cookbook)
+- [Primeiro app Flutter](https://docs.flutter.dev/get-started/codelab)
