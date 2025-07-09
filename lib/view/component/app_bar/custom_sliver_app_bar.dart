@@ -14,7 +14,7 @@ class CustomSliverAppBar extends StatelessWidget {
       actions: [
         const LanguageSelector(),
         const ThemeToggleButton(),
-        const SizedBox(width: 8),
+        SizedBox(width: uiConstants.spacing2),
       ],
     );
   }

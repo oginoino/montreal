@@ -13,17 +13,20 @@ class LanguageSelector extends StatelessWidget {
           onSelected: (Locale locale) {
             localeProvider.setLocale(locale);
           },
-          itemBuilder: (BuildContext context) => LocaleConstants.supportedLocales
-              .map((localeData) => PopupMenuItem<Locale>(
-                    value: localeData.locale,
-                    child: Row(
-                      children: [
-                        Text(localeData.flag),
-                        const SizedBox(width: 8),
-                        Text(localeData.displayName),
-                      ],
-                    ),
-                  ))
+          itemBuilder: (BuildContext context) => LocaleConstants
+              .supportedLocales
+              .map(
+                (localeData) => PopupMenuItem<Locale>(
+                  value: localeData.locale,
+                  child: Row(
+                    spacing: uiConstants.spacing2,
+                    children: [
+                      Text(localeData.flag),
+                      Text(localeData.displayName),
+                    ],
+                  ),
+                ),
+              )
               .toList(),
         );
       },
