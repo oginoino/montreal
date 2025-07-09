@@ -15,49 +15,31 @@ class CustomSliverAppBar extends StatelessWidget {
             // Botão de seleção de idioma
             PopupMenuButton<Locale>(
               icon: const Icon(Icons.language),
-              tooltip: 'Selecionar idioma',
+              tooltip: LocaleConstants.languageSelectionTooltip,
               onSelected: (Locale locale) {
                 localeProvider.setLocale(locale);
               },
-              itemBuilder: (BuildContext context) => [
-                const PopupMenuItem<Locale>(
-                  value: Locale('pt', 'BR'),
-                  child: Row(
-                    children: [
-                      Text('🇧🇷'),
-                      SizedBox(width: 8),
-                      Text('Português'),
-                    ],
-                  ),
-                ),
-                const PopupMenuItem<Locale>(
-                  value: Locale('en', 'US'),
-                  child: Row(
-                    children: [
-                      Text('🇺🇸'),
-                      SizedBox(width: 8),
-                      Text('English'),
-                    ],
-                  ),
-                ),
-                const PopupMenuItem<Locale>(
-                  value: Locale('es', 'MX'),
-                  child: Row(
-                    children: [
-                      Text('🇲🇽'),
-                      SizedBox(width: 8),
-                      Text('Español'),
-                    ],
-                  ),
-                ),
-              ],
+              itemBuilder: (BuildContext context) => LocaleConstants.supportedLocales
+                  .map((localeData) => PopupMenuItem<Locale>(
+                        value: localeData.locale,
+                        child: Row(
+                          children: [
+                            Text(localeData.flag),
+                            const SizedBox(width: 8),
+                            Text(localeData.displayName),
+                          ],
+                        ),
+                      ))
+                  .toList(),
             ),
             // Botão de modo noturno
             IconButton(
               icon: Icon(
                 themeProvider.isDarkMode ? Icons.light_mode : Icons.dark_mode,
               ),
-              tooltip: themeProvider.isDarkMode ? 'Modo claro' : 'Modo escuro',
+              tooltip: themeProvider.isDarkMode 
+                  ? LocaleConstants.lightModeTooltip 
+                  : LocaleConstants.darkModeTooltip,
               onPressed: () {
                 themeProvider.toggleTheme();
               },

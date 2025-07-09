@@ -52,6 +52,10 @@ export '../config/locale_config.dart';
 export 'package:montreal/utils/constants/app_constants.dart';
 // UI Constants
 export 'package:montreal/utils/constants/ui_constants.dart';
+// Locale Constants
+export 'package:montreal/utils/constants/locale_constants.dart';
+// String Constants
+export 'package:montreal/utils/constants/string_constants.dart';
 
 // VIEW
 // Theme

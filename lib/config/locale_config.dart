@@ -12,9 +12,6 @@ class LocaleConfig {
       ];
 
   /// Get the app supported locales
-  static List<Locale> get supportedLocales => const [
-        Locale('pt', 'BR'), // Português do Brasil
-        Locale('en', 'US'), // English
-        Locale('es', 'MX'), // Español de América Latina
-      ];
+  static List<Locale> get supportedLocales => 
+      LocaleConstants.supportedLocales.map((localeData) => localeData.locale).toList();
 }
