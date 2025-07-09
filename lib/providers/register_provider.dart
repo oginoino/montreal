@@ -5,7 +5,7 @@ class RegisterProvider {
 
   static List<SingleChildWidget> registerProviders() {
     return [
-      // ChangeNotifierProvider(create: (context) => ThemeProvider())
+      ChangeNotifierProvider(create: (context) => ThemeProvider())
     ];
   }
 }
