@@ -5,6 +5,9 @@ export 'package:flutter/material.dart';
 //Cupertino
 export 'package:flutter/cupertino.dart' hide RefreshCallback;
 
+// Localizations
+export 'package:flutter_localizations/flutter_localizations.dart';
+
 // Google Fonts
 export 'package:google_fonts/google_fonts.dart';
 
@@ -16,6 +19,7 @@ export 'package:provider/provider.dart';
 export 'package:provider/single_child_widget.dart';
 export '../providers/register_provider.dart';
 export '../providers/theme_provider.dart';
+export '../providers/locale_provider.dart';
 
 // App
 export '../app/montreal_app.dart';
@@ -41,6 +45,7 @@ export 'package:montreal/route/router.dart';
 export '../config/bootstrap.dart';
 export '../config/environment.dart';
 export '../config/di.dart';
+export '../config/locale_config.dart';
 
 // CONSTANTS
 // Constants

@@ -106,8 +106,26 @@ TextTheme _lightTextTheme = TextTheme(
   ),
 );
 
+AppBarTheme _lightAppBarTheme = AppBarTheme(
+  backgroundColor: _lightColorScheme.surface,
+  foregroundColor: _lightColorScheme.onSurface,
+  elevation: 0,
+  scrolledUnderElevation: 4,
+  shadowColor: _lightColorScheme.shadow,
+  surfaceTintColor: _lightColorScheme.surfaceTint,
+  titleTextStyle: TextStyle(
+    fontFamily: 'SanFranciscoPro',
+    fontSize: 22,
+    fontWeight: FontWeight.w600,
+    color: _lightColorScheme.onSurface,
+  ),
+  iconTheme: IconThemeData(color: _lightColorScheme.onSurface, size: 24),
+  actionsIconTheme: IconThemeData(color: _lightColorScheme.onSurface, size: 24),
+);
+
 ThemeData customLightTheme = ThemeData(
   useMaterial3: true,
   colorScheme: _lightColorScheme,
   textTheme: _lightTextTheme,
+  appBarTheme: _lightAppBarTheme,
 );

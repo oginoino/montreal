@@ -106,8 +106,26 @@ TextTheme _darkTextTheme = TextTheme(
   ),
 );
 
+AppBarTheme _darkAppBarTheme = AppBarTheme(
+  backgroundColor: _darkColorScheme.surface,
+  foregroundColor: _darkColorScheme.onSurface,
+  elevation: 0,
+  scrolledUnderElevation: 4,
+  shadowColor: _darkColorScheme.shadow,
+  surfaceTintColor: _darkColorScheme.surfaceTint,
+  titleTextStyle: TextStyle(
+    fontFamily: 'SanFranciscoPro',
+    fontSize: 22,
+    fontWeight: FontWeight.w600,
+    color: _darkColorScheme.onSurface,
+  ),
+  iconTheme: IconThemeData(color: _darkColorScheme.onSurface, size: 24),
+  actionsIconTheme: IconThemeData(color: _darkColorScheme.onSurface, size: 24),
+);
+
 ThemeData customDarkTheme = ThemeData(
   useMaterial3: true,
   colorScheme: _darkColorScheme,
   textTheme: _darkTextTheme,
+  appBarTheme: _darkAppBarTheme,
 );
