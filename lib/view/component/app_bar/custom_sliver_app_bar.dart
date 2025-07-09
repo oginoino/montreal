@@ -8,7 +8,7 @@ class CustomSliverAppBar extends StatelessWidget {
     return Consumer2<ThemeProvider, LocaleProvider>(
       builder: (context, themeProvider, localeProvider, child) {
         return SliverAppBar(
-          title: const Text('Montreal'),
+          title: Text(appConstants.appName),
           floating: true,
           snap: true,
           actions: [
@@ -55,13 +55,9 @@ class CustomSliverAppBar extends StatelessWidget {
             // Botão de modo noturno
             IconButton(
               icon: Icon(
-                themeProvider.isDarkMode
-                    ? Icons.light_mode
-                    : Icons.dark_mode,
+                themeProvider.isDarkMode ? Icons.light_mode : Icons.dark_mode,
               ),
-              tooltip: themeProvider.isDarkMode
-                  ? 'Modo claro'
-                  : 'Modo escuro',
+              tooltip: themeProvider.isDarkMode ? 'Modo claro' : 'Modo escuro',
               onPressed: () {
                 themeProvider.toggleTheme();
               },
