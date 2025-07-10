@@ -28,7 +28,7 @@ export 'package:go_router/go_router.dart';
 // =============================================================================
 
 // Main App
-export '../../app/montreal_app.dart';
+export '../../app/app.dart';
 
 // Configuration
 export '../../config/bootstrap.dart';
@@ -48,10 +48,10 @@ export '../../providers/locale_provider.dart';
 // ROUTING
 // =============================================================================
 
-export 'package:montreal/route/app_route.dart';
+export '../../route/app_route.dart';
 export '../../route/handlers/handler_redirect.dart';
 export '../../route/routes.dart';
-export 'package:montreal/route/router.dart';
+export '../../route/router.dart';
 
 // =============================================================================
 // MODELS
@@ -63,10 +63,10 @@ export '../../model/locale_data.dart';
 // CONSTANTS
 // =============================================================================
 
-export 'package:montreal/utils/constants/app_constants.dart';
-export 'package:montreal/utils/constants/ui_constants.dart';
-export 'package:montreal/utils/constants/locale_constants.dart';
-export 'package:montreal/utils/constants/string_constants.dart';
+export '/utils/constants/app_constants.dart';
+export '/utils/constants/ui_constants.dart';
+export '/utils/constants/locale_constants.dart';
+export '/utils/constants/string_constants.dart';
 
 // =============================================================================
 // UI COMPONENTS
