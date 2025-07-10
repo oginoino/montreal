@@ -33,12 +33,18 @@ lib/
 ├── route/              # 🧭 Sistema de roteamento
 │   ├── app_route.dart  # Definição de rotas
 │   ├── handlers/       # Manipuladores de rota
+│   │   └── handler_redirect.dart
 │   ├── router.dart     # Configuração do Go Router
 │   └── routes.dart     # Constantes de rotas
 ├── services/           # 🌐 Serviços e APIs
 ├── utils/              # 🛠️ Utilitários e helpers
-│   ├── common_libs.dart
-│   └── constants/      # Constantes da aplicação
+│   ├── constants/      # Constantes da aplicação
+│   │   ├── app_constants.dart
+│   │   ├── locale_constants.dart
+│   │   ├── string_constants.dart
+│   │   └── ui_constants.dart
+│   └── imports/        # Imports comuns
+│       └── common_libs.dart
 └── view/               # 🎨 Interface do usuário
     ├── component/      # Componentes reutilizáveis
     ├── page/          # Páginas da aplicação
@@ -81,10 +87,11 @@ Organização modular que separa claramente responsabilidades:
 - 📚 Curva de aprendizado suave
 - 🔧 Flexibilidade para diferentes padrões
 
-### **Abstração de Variáveis e Temas**
+### **Sistema de Temas e Tipografia**
 - **Temas centralizados**: Cores, tipografia e espaçamentos consistentes
 - **Dark/Light mode**: Suporte nativo a múltiplos temas
 - **Responsividade**: Adaptação automática a diferentes telas
+- **Fonte personalizada**: San Francisco Pro Text integrada
 - **Customização**: Fácil personalização da identidade visual
 
 #### 🎨 **Sistema de Temas Claro/Escuro**
@@ -166,45 +173,41 @@ cd montreal
 # 2. Instale as dependências
 flutter pub get
 
-# 3. Execute a aplicação com variáveis de ambiente
-flutter run --dart-define-from-file=assets/.env
-
-# Ou execute sem variáveis de ambiente (modo básico)
+# 3. Execute a aplicação
 flutter run
 ```
 
 ### **Customização para Seu Projeto**
 
 1. **Renomeie o projeto**:
-   ```bash
-   # Altere o nome em pubspec.yaml
-   # Atualize imports e referências
-   ```
+   - Altere o nome em `pubspec.yaml`
+   - Atualize imports e referências no código
 
 2. **Configure seu tema**:
-   ```dart
-   // Em lib/view/theme/
-   // Personalize cores, tipografia e espaçamentos
-   ```
+   - Em `lib/view/theme/`
+   - Personalize cores, tipografia e espaçamentos
 
 3. **Defina suas rotas**:
-   ```dart
-   // Em lib/route/routes.dart
-   // Adicione as rotas do seu app
-   ```
+   - Em `lib/route/routes.dart`
+   - Adicione as rotas do seu app
 
 4. **Configure ambientes**:
-   ```dart
-   // Em lib/config/environment.dart
-   // Defina variáveis por ambiente
-   ```
+   - Em `lib/config/environment.dart`
+   - Defina variáveis por ambiente
 
 ## 📦 Dependências Principais
 
-- **go_router**: Roteamento declarativo
-- **provider**: Gerenciamento de estado
-- **flutter_localizations**: Internacionalização
-- **get_it**: Injeção de dependência (opcional)
+- **go_router**: Roteamento declarativo e type-safe
+- **provider**: Gerenciamento de estado reativo
+- **flutter_localizations**: Internacionalização nativa
+- **get_it**: Injeção de dependência
+- **google_fonts**: Fontes do Google
+- **cupertino_icons**: Ícones do iOS
+
+### **Recursos Inclusos**
+- **Fonte San Francisco Pro**: Tipografia premium da Apple
+- **Estrutura modular**: Organização escalável de código
+- **Configuração de ambiente**: Setup para diferentes ambientes
 
 ## 🎨 Benefícios para Novos Projetos
 
