@@ -84,6 +84,36 @@ Organização modular que separa claramente responsabilidades:
 - **Responsividade**: Adaptação automática a diferentes telas
 - **Customização**: Fácil personalização da identidade visual
 
+#### 🎨 **Sistema de Temas Claro/Escuro**
+```dart
+// lib/providers/theme_provider.dart
+// Gerencia alternância entre temas claro e escuro
+// Persiste preferência do usuário
+// Detecta tema do sistema automaticamente
+```
+
+**Implementação:**
+- 🌞 **Tema Claro**: Cores otimizadas para ambientes bem iluminados
+- 🌙 **Tema Escuro**: Reduz fadiga ocular em ambientes com pouca luz
+- 🔄 **Alternância Dinâmica**: Mudança instantânea sem restart
+- 💾 **Persistência**: Lembra da preferência do usuário
+- 📱 **Detecção Automática**: Segue configuração do sistema operacional
+
+#### 🌍 **Sistema de Localização (i18n)**
+```dart
+// lib/config/locale_config.dart
+// Configuração de idiomas suportados
+// lib/providers/locale_provider.dart
+// Gerenciamento de mudança de idioma
+```
+
+**Recursos de Localização:**
+- 🗣️ **Múltiplos Idiomas**: Suporte extensível para diferentes idiomas
+- 🔄 **Mudança Dinâmica**: Troca de idioma sem reiniciar o app
+- 📱 **Detecção Automática**: Usa idioma do dispositivo como padrão
+- 💾 **Persistência**: Mantém idioma escolhido pelo usuário
+- 🎯 **Fallback Inteligente**: Volta para idioma padrão se necessário
+
 ### **Utils e Constants**
 - **Helpers reutilizáveis**: Funções utilitárias comuns
 - **Constantes tipadas**: Valores fixos organizados e type-safe
@@ -95,6 +125,32 @@ Organização modular que separa claramente responsabilidades:
 - **Bootstrap**: Inicialização controlada da aplicação
 - **DI Container**: Injeção de dependência centralizada
 - **Locale**: Configuração de internacionalização
+
+#### ⚙️ **Configurações Detalhadas**
+
+**Environment (environment.dart)**
+```dart
+// Variáveis por ambiente (desenvolvimento, produção)
+// URLs de API diferentes por ambiente
+// Configurações de debug e logging
+// Chaves de API e secrets por ambiente
+```
+
+**Bootstrap (bootstrap.dart)**
+```dart
+// Inicialização de serviços essenciais
+// Configuração de providers globais
+// Setup de dependências antes do app iniciar
+// Tratamento de erros na inicialização
+```
+
+**Locale Config (locale_config.dart)**
+```dart
+// Lista de idiomas suportados
+// Configuração de delegates de localização
+// Definição de idioma padrão
+// Formatação de data, número e moeda por região
+```
 
 ## 🚀 Como Usar Este Template
 
