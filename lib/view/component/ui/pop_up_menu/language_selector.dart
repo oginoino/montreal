@@ -1,4 +1,4 @@
-import '../../../utils/imports/common_libs.dart';
+import '../../../../utils/imports/common_libs.dart';
 
 class LanguageSelector extends StatelessWidget {
   const LanguageSelector({super.key});

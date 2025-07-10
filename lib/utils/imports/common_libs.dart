@@ -74,13 +74,13 @@ export '../../view/theme/dark_theme.dart';
 export '../../view/page/home_page.dart';
 
 // Components - Screens
-export '../../view/component/screen/scaffold_sliver.dart';
+export '../../view/component/ui/screen/scaffold_sliver.dart';
 
 // Components - App Bars
-export '../../view/component/app_bar/custom_sliver_app_bar.dart';
+export '../../view/component/ui/app_bar/custom_sliver_app_bar.dart';
 
 // Components - UI
 // Selectors
-export '../../view/component/ui/language_selector.dart';
+export '../../view/component/ui/pop_up_menu/language_selector.dart';
 // Buttons
-export '../../view/component/ui/theme_toggle_button.dart';
+export '../../view/component/ui/button/theme_toggle_button.dart';
