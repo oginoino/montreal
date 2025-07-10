@@ -28,7 +28,7 @@ export 'package:go_router/go_router.dart';
 // =============================================================================
 
 // Main App
-export '../../app/montreal_app.dart';
+export '../../app/app.dart';
 
 // Configuration
 export '../../config/bootstrap.dart';
