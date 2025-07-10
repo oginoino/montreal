@@ -202,9 +202,42 @@ AppBarTheme _darkAppBarTheme = AppBarTheme(
   actionsPadding: const EdgeInsets.symmetric(horizontal: 8.0),
 );
 
+TooltipThemeData _darkTooltipTheme = TooltipThemeData(
+  constraints: const BoxConstraints(minHeight: 32.0),
+  padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+  margin: const EdgeInsets.all(8.0),
+  verticalOffset: 24.0,
+  preferBelow: true,
+  excludeFromSemantics: false,
+  enableFeedback: true,
+  decoration: BoxDecoration(
+    color: _darkColorScheme.inverseSurface,
+    borderRadius: BorderRadius.circular(UIConstants.radius8),
+    boxShadow: [
+      BoxShadow(
+        color: _darkColorScheme.shadow.withValues(alpha: UIConstants.opacity30),
+        offset: const Offset(0, 2),
+        blurRadius: UIConstants.elevation6,
+        spreadRadius: 0,
+      ),
+    ],
+  ),
+  textStyle: TextStyle(
+    fontFamily: 'SanFranciscoPro',
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: _darkColorScheme.onInverseSurface,
+    letterSpacing: 0.4,
+  ),
+  textAlign: TextAlign.center,
+  waitDuration: const Duration(milliseconds: 500),
+  showDuration: const Duration(seconds: 1, milliseconds: 500),
+);
+
 ThemeData customDarkTheme = ThemeData(
   useMaterial3: true,
   colorScheme: _darkColorScheme,
   textTheme: _darkTextTheme,
   appBarTheme: _darkAppBarTheme,
+  tooltipTheme: _darkTooltipTheme,
 );

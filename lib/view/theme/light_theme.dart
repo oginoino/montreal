@@ -196,9 +196,42 @@ AppBarTheme _lightAppBarTheme = AppBarTheme(
   actionsPadding: const EdgeInsets.symmetric(horizontal: 8.0),
 );
 
+TooltipThemeData _lightTooltipTheme = TooltipThemeData(
+  constraints: const BoxConstraints(minHeight: 32.0),
+  padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+  margin: const EdgeInsets.all(8.0),
+  verticalOffset: 24.0,
+  preferBelow: true,
+  excludeFromSemantics: false,
+  enableFeedback: true,
+  decoration: BoxDecoration(
+    color: _lightColorScheme.inverseSurface,
+    borderRadius: BorderRadius.circular(UIConstants.radius8),
+    boxShadow: [
+      BoxShadow(
+        color: _lightColorScheme.shadow.withValues(alpha: UIConstants.opacity20),
+        offset: const Offset(0, 2),
+        blurRadius: UIConstants.elevation4,
+        spreadRadius: 0,
+      ),
+    ],
+  ),
+  textStyle: TextStyle(
+    fontFamily: 'SanFranciscoPro',
+    fontSize: 12,
+    fontWeight: FontWeight.w500,
+    color: _lightColorScheme.onInverseSurface,
+    letterSpacing: 0.4,
+  ),
+  textAlign: TextAlign.center,
+  waitDuration: const Duration(milliseconds: 500),
+  showDuration: const Duration(seconds: 1, milliseconds: 500),
+);
+
 ThemeData customLightTheme = ThemeData(
   useMaterial3: true,
   colorScheme: _lightColorScheme,
   textTheme: _lightTextTheme,
   appBarTheme: _lightAppBarTheme,
+  tooltipTheme: _lightTooltipTheme,
 );
