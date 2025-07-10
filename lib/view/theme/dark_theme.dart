@@ -1,65 +1,65 @@
 import '../../../utils/common_libs.dart';
 
-ColorScheme _darkColorScheme = const ColorScheme.dark(
+ColorScheme _darkColorScheme = ColorScheme.dark(
   // Primary colors
-  primary: Color(0xFF9575FF),
-  onPrimary: Color(0xFF1C1B33),
-  primaryContainer: Color(0xFF3A2E7C),
-  onPrimaryContainer: Color(0xFFE0D9FF),
-  primaryFixed: Color(0xFFE0D9FF),
-  primaryFixedDim: Color(0xFFC4B5FF),
-  onPrimaryFixed: Color(0xFF1C1B33),
-  onPrimaryFixedVariant: Color(0xFF48319D),
-  
+  primary: uiConstants.darkPrimary,
+  onPrimary: uiConstants.darkOnPrimary,
+  primaryContainer: uiConstants.darkPrimaryContainer,
+  onPrimaryContainer: uiConstants.darkOnPrimaryContainer,
+  primaryFixed: uiConstants.darkOnPrimaryContainer,
+  primaryFixedDim: uiConstants.darkPrimaryFixedDim,
+  onPrimaryFixed: uiConstants.darkOnPrimaryContainer,
+  onPrimaryFixedVariant: uiConstants.darkOnPrimaryFixedVariant,
+
   // Secondary colors
-  secondary: Color(0xFF7C7C7C),
-  onSecondary: Color(0xFF1D192B),
-  secondaryContainer: Color(0xFF332D41),
-  onSecondaryContainer: Color(0xFFE8DEF8),
-  secondaryFixed: Color(0xFFE8DEF8),
-  secondaryFixedDim: Color(0xFFCCC2DC),
-  onSecondaryFixed: Color(0xFF1D192B),
-  onSecondaryFixedVariant: Color(0xFF49454F),
-  
+  secondary: uiConstants.darkSecondary,
+  onSecondary: uiConstants.darkOnSecondary,
+  secondaryContainer: uiConstants.darkSecondaryContainer,
+  onSecondaryContainer: uiConstants.darkOnSecondaryContainer,
+  secondaryFixed: uiConstants.darkOnSecondaryContainer,
+  secondaryFixedDim: uiConstants.darkSecondaryFixedDim,
+  onSecondaryFixed: uiConstants.darkOnSecondary,
+  onSecondaryFixedVariant: uiConstants.darkOutlineVariant,
+
   // Tertiary colors
-  tertiary: Color(0xFFE91E63),
-  onTertiary: Color(0xFF36003C),
-  tertiaryContainer: Color(0xFF5D1049),
-  onTertiaryContainer: Color(0xFFF2DAFF),
-  tertiaryFixed: Color(0xFFF2DAFF),
-  tertiaryFixedDim: Color(0xFFD0BCFF),
-  onTertiaryFixed: Color(0xFF36003C),
-  onTertiaryFixedVariant: Color(0xFF7F39FB),
-  
+  tertiary: uiConstants.darkTertiary,
+  onTertiary: uiConstants.darkOnTertiary,
+  tertiaryContainer: uiConstants.darkTertiaryContainer,
+  onTertiaryContainer: uiConstants.darkOnTertiaryContainer,
+  tertiaryFixed: uiConstants.darkOnTertiaryContainer,
+  tertiaryFixedDim: uiConstants.darkTertiaryFixedDim,
+  onTertiaryFixed: uiConstants.darkOnTertiaryContainer,
+  onTertiaryFixedVariant: uiConstants.darkOnTertiaryFixedVariant,
+
   // Error colors
-  error: Color(0xFFFFB4AB),
-  onError: Color(0xFF690005),
-  errorContainer: Color(0xFF93000A),
-  onErrorContainer: Color(0xFFFFDAD6),
-  
+  error: uiConstants.darkError,
+  onError: uiConstants.darkOnError,
+  errorContainer: uiConstants.darkErrorContainer,
+  onErrorContainer: uiConstants.darkOnErrorContainer,
+
   // Surface colors
-  surface: Color(0xFF2D2D2D),
-  onSurface: Color(0xFFE1E1E1),
-  surfaceDim: Color(0xFF141218),
-  surfaceBright: Color(0xFF3B383E),
-  surfaceContainerLowest: Color(0xFF0F0D13),
-  surfaceContainerLow: Color(0xFF1D1B20),
-  surfaceContainer: Color(0xFF211F26),
-  surfaceContainerHigh: Color(0xFF2B2930),
-  surfaceContainerHighest: Color(0xFF36343B),
-  
+  surface: uiConstants.darkSurface,
+  onSurface: uiConstants.darkOnSurface,
+  surfaceDim: uiConstants.darkSurfaceDim,
+  surfaceBright: uiConstants.darkSurfaceBright,
+  surfaceContainerLowest: uiConstants.darkSurfaceContainerLowest,
+  surfaceContainerLow: uiConstants.darkSurfaceContainerLow,
+  surfaceContainer: uiConstants.darkSurfaceContainer,
+  surfaceContainerHigh: uiConstants.darkSurfaceContainerHigh,
+  surfaceContainerHighest: uiConstants.darkSurfaceContainerHighest,
+
   // Outline colors
-  outline: Color(0xFF938F99),
-  outlineVariant: Color(0xFF49454F),
-  
+  outline: uiConstants.darkOutline,
+  outlineVariant: uiConstants.darkOutlineVariant,
+
   // Other colors
-  shadow: Color(0xFF000000),
-  scrim: Color(0xFF000000),
-  inverseSurface: Color(0xFFE6E0E9),
-  onInverseSurface: Color(0xFF313033),
-  inversePrimary: Color(0xFF48319D),
-  surfaceTint: Color(0xFF9575FF),
-  onSurfaceVariant: Color(0xFFCAC4D0),
+  shadow: uiConstants.darkShadow,
+  scrim: uiConstants.darkScrim,
+  inverseSurface: uiConstants.darkInverseSurface,
+  onInverseSurface: uiConstants.darkOnInverseSurface,
+  inversePrimary: uiConstants.darkInversePrimary,
+  surfaceTint: uiConstants.darkSurfaceTint,
+  onSurfaceVariant: uiConstants.darkOnSurfaceVariant,
 );
 
 TextTheme _darkTextTheme = TextTheme(
@@ -164,74 +164,79 @@ AppBarTheme _darkAppBarTheme = AppBarTheme(
   backgroundColor: _darkColorScheme.surface,
   foregroundColor: _darkColorScheme.onSurface,
   elevation: 0,
-  scrolledUnderElevation: UIConstants.elevation4,
+  scrolledUnderElevation: uiConstants.elevation4,
   shadowColor: _darkColorScheme.shadow,
   surfaceTintColor: _darkColorScheme.surfaceTint,
   shape: null,
   iconTheme: IconThemeData(
     color: _darkColorScheme.onSurface,
-    size: 24,
+    size: uiConstants.appBarIconSize,
   ),
   actionsIconTheme: IconThemeData(
     color: _darkColorScheme.onSurface,
-    size: 24,
+    size: uiConstants.appBarIconSize,
   ),
   centerTitle: false,
-  titleSpacing: 16.0,
-  toolbarHeight: 64.0,
-  leadingWidth: 56.0,
+  titleSpacing: uiConstants.appBarTitleSpacing,
+  toolbarHeight: uiConstants.appBarToolbarHeight,
+  leadingWidth: uiConstants.appBarLeadingWidth,
   titleTextStyle: TextStyle(
     fontFamily: 'SanFranciscoPro',
-    fontSize: 22,
+    fontSize: uiConstants.appBarTitleFontSize,
     fontWeight: FontWeight.w600,
     color: _darkColorScheme.onSurface,
   ),
   toolbarTextStyle: TextStyle(
     fontFamily: 'SanFranciscoPro',
-    fontSize: 16,
+    fontSize: uiConstants.appBarToolbarFontSize,
     fontWeight: FontWeight.w400,
     color: _darkColorScheme.onSurface,
   ),
   systemOverlayStyle: SystemUiOverlayStyle(
-    statusBarColor: Colors.transparent,
+    statusBarColor: uiConstants.transparent,
     statusBarIconBrightness: Brightness.light,
     statusBarBrightness: Brightness.dark,
     systemNavigationBarColor: _darkColorScheme.surface,
     systemNavigationBarIconBrightness: Brightness.light,
   ),
-  actionsPadding: const EdgeInsets.symmetric(horizontal: 8.0),
+  actionsPadding: EdgeInsets.symmetric(
+    horizontal: uiConstants.appBarActionsPadding,
+  ),
 );
 
 TooltipThemeData _darkTooltipTheme = TooltipThemeData(
-  constraints: const BoxConstraints(minHeight: 32.0),
-  padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
-  margin: const EdgeInsets.all(8.0),
-  verticalOffset: 24.0,
+  constraints: BoxConstraints(minHeight: uiConstants.tooltipMinHeight),
+  padding: EdgeInsets.symmetric(
+    horizontal: uiConstants.tooltipPaddingHorizontal,
+    vertical: uiConstants.tooltipPaddingVertical,
+  ),
+  margin: EdgeInsets.all(uiConstants.tooltipMargin),
+  verticalOffset: uiConstants.tooltipVerticalOffset,
   preferBelow: true,
   excludeFromSemantics: false,
   enableFeedback: true,
   decoration: BoxDecoration(
     color: _darkColorScheme.inverseSurface,
-    borderRadius: BorderRadius.circular(UIConstants.radius8),
+    borderRadius: BorderRadius.circular(uiConstants.radius8),
     boxShadow: [
       BoxShadow(
-        color: _darkColorScheme.shadow.withValues(alpha: UIConstants.opacity30),
+        color: _darkColorScheme.shadow.withValues(alpha: uiConstants.opacity30),
         offset: const Offset(0, 2),
-        blurRadius: UIConstants.elevation6,
+        blurRadius: uiConstants.elevation6,
         spreadRadius: 0,
       ),
     ],
   ),
   textStyle: TextStyle(
     fontFamily: 'SanFranciscoPro',
-    fontSize: 12,
+    fontSize: uiConstants.tooltipFontSize,
     fontWeight: FontWeight.w500,
     color: _darkColorScheme.onInverseSurface,
-    letterSpacing: 0.4,
+    letterSpacing: uiConstants.tooltipLetterSpacing,
   ),
   textAlign: TextAlign.center,
-  waitDuration: const Duration(milliseconds: 500),
-  showDuration: const Duration(seconds: 1, milliseconds: 500),
+  waitDuration: Duration(milliseconds: uiConstants.tooltipWaitDurationMs),
+  showDuration: Duration(milliseconds: uiConstants.tooltipShowDurationMs),
 );
 
 ThemeData customDarkTheme = ThemeData(

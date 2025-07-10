@@ -14,12 +14,12 @@ class LanguageSelector extends StatelessWidget {
           icon: Icon(Icons.language, color: colorScheme.onSurface),
           tooltip: LocaleConstants.languageSelectionTooltip,
           color: colorScheme.surface,
-          elevation: UIConstants.elevation8,
+          elevation: uiConstants.elevation8,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(UIConstants.radius12),
+            borderRadius: BorderRadius.circular(uiConstants.radius12),
             side: BorderSide(
-              color: colorScheme.outline.withValues(alpha: UIConstants.opacity20),
-              width: UIConstants.borderWidth1,
+              color: colorScheme.outline.withValues(alpha: uiConstants.opacity20),
+              width: uiConstants.borderWidth1,
             ),
           ),
           onSelected: (Locale locale) {
@@ -36,9 +36,9 @@ class LanguageSelector extends StatelessWidget {
                   ),
                   child: Container(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(UIConstants.radius8),
+                      borderRadius: BorderRadius.circular(uiConstants.radius8),
                       color: localeProvider.currentLocale == localeData.locale
-                          ? colorScheme.primary.withValues(alpha: UIConstants.opacity10)
+                          ? colorScheme.primary.withValues(alpha: uiConstants.opacity10)
                           : Colors.transparent,
                     ),
                     padding: EdgeInsets.all(uiConstants.spacing2),

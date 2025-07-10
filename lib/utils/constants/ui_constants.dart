@@ -20,35 +20,144 @@ class UIConstants {
   double spacing24 = 96.0; // 8 * 12
 
   // Escala de opacidade
-  static const double opacity10 = 0.1;
-  static const double opacity20 = 0.2;
-  static const double opacity30 = 0.3;
-  static const double opacity40 = 0.4;
-  static const double opacity50 = 0.5;
-  static const double opacity60 = 0.6;
-  static const double opacity70 = 0.7;
-  static const double opacity80 = 0.8;
-  static const double opacity90 = 0.9;
+  double opacity10 = 0.1;
+  double opacity20 = 0.2;
+  double opacity30 = 0.3;
+  double opacity40 = 0.4;
+  double opacity50 = 0.5;
+  double opacity60 = 0.6;
+  double opacity70 = 0.7;
+  double opacity80 = 0.8;
+  double opacity90 = 0.9;
 
   // BorderRadius
-  static const double radius4 = 4.0;
-  static const double radius8 = 8.0;
-  static const double radius12 = 12.0;
-  static const double radius16 = 16.0;
-  static const double radius20 = 20.0;
-  static const double radius24 = 24.0;
+  double radius4 = 4.0;
+  double radius8 = 8.0;
+  double radius12 = 12.0;
+  double radius16 = 16.0;
+  double radius20 = 20.0;
+  double radius24 = 24.0;
 
   // Elevation
-  static const double elevation2 = 2.0;
-  static const double elevation4 = 4.0;
-  static const double elevation6 = 6.0;
-  static const double elevation8 = 8.0;
-  static const double elevation12 = 12.0;
-  static const double elevation16 = 16.0;
+  double elevation2 = 2.0;
+  double elevation4 = 4.0;
+  double elevation6 = 6.0;
+  double elevation8 = 8.0;
+  double elevation12 = 12.0;
+  double elevation16 = 16.0;
 
   // Border Width
-  static const double borderWidth1 = 1.0;
-  static const double borderWidth2 = 2.0;
-  static const double borderWidth3 = 3.0;
-  static const double borderWidth4 = 4.0;
+  double borderWidth1 = 1.0;
+  double borderWidth2 = 2.0;
+  double borderWidth3 = 3.0;
+  double borderWidth4 = 4.0;
+
+  // Tooltip Constants
+  double tooltipMinHeight = 32.0;
+  double tooltipPaddingHorizontal = 12.0;
+  double tooltipPaddingVertical = 8.0;
+  double tooltipMargin = 8.0;
+  double tooltipVerticalOffset = 24.0;
+  double tooltipFontSize = 12.0;
+  double tooltipLetterSpacing = 0.4;
+  int tooltipWaitDurationMs = 500;
+  int tooltipShowDurationMs = 1500;
+
+  // AppBar Constants
+  double appBarTitleSpacing = 16.0;
+  double appBarToolbarHeight = 64.0;
+  double appBarLeadingWidth = 56.0;
+  double appBarIconSize = 24.0;
+  double appBarActionsPadding = 8.0;
+  double appBarTitleFontSize = 22.0;
+  double appBarToolbarFontSize = 16.0;
+
+  // Light Theme Colors
+  Color lightPrimary = Color(0xFF48319D);
+  Color lightOnPrimary = Color(0xFFFFFFFF);
+  Color lightPrimaryContainer = Color(0xFFE0D9FF);
+  Color lightOnPrimaryContainer = Color(0xFF1C1B33);
+  Color lightSecondary = Color(0xFF1F1D47);
+  Color lightOnSecondary = Color(0xFFFFFFFF);
+  Color lightSecondaryContainer = Color(0xFF625B71);
+  Color lightOnSecondaryContainer = Color(0xFFE8DEF8);
+  Color lightTertiary = Color(0xFFC427FB);
+  Color lightOnTertiary = Color(0xFFFFFFFF);
+  Color lightTertiaryContainer = Color(0xFFF2DAFF);
+  Color lightOnTertiaryContainer = Color(0xFF36003C);
+  Color lightError = Color(0xFFBA1A1A);
+  Color lightOnError = Color(0xFFFFFFFF);
+  Color lightErrorContainer = Color(0xFFFFDAD6);
+  Color lightOnErrorContainer = Color(0xFF410002);
+  Color lightSurface = Color(0xFFE0D9FF);
+  Color lightOnSurface = Color(0xFF1C1B33);
+  Color lightSurfaceContainerLowest = Color(0xFFFFFFFF);
+  Color lightOutline = Color(0xFF79747E);
+  Color lightOutlineVariant = Color(0xFFCAC4D0);
+  Color lightShadow = Color(0xFF000000);
+  Color lightScrim = Color(0xFF000000);
+  Color lightInverseSurface = Color(0xFF313033);
+  Color lightOnInverseSurface = Color(0xFFF4EFF4);
+  Color lightInversePrimary = Color(0xFFC4B5FF);
+  Color lightSurfaceTint = Color(0xFF48319D);
+  Color lightOnSurfaceVariant = Color(0xFF49454F);
+
+  // Dark Theme Colors
+  Color darkPrimary = Color(0xFF9575FF);
+  Color darkOnPrimary = Color(0xFF1C1B33);
+  Color darkPrimaryContainer = Color(0xFF3A2E7C);
+  Color darkOnPrimaryContainer = Color(0xFFE0D9FF);
+  Color darkSecondary = Color(0xFF7C7C7C);
+  Color darkOnSecondary = Color(0xFF1D192B);
+  Color darkSecondaryContainer = Color(0xFF332D41);
+  Color darkOnSecondaryContainer = Color(0xFFE8DEF8);
+  Color darkTertiary = Color(0xFFE91E63);
+  Color darkOnTertiary = Color(0xFF36003C);
+  Color darkTertiaryContainer = Color(0xFF5D1049);
+  Color darkOnTertiaryContainer = Color(0xFFF2DAFF);
+  Color darkError = Color(0xFFFFB4AB);
+  Color darkOnError = Color(0xFF690005);
+  Color darkErrorContainer = Color(0xFF93000A);
+  Color darkOnErrorContainer = Color(0xFFFFDAD6);
+  Color darkSurface = Color(0xFF2D2D2D);
+  Color darkOnSurface = Color(0xFFE1E1E1);
+  Color darkSurfaceContainerLowest = Color(0xFF0F0D13);
+  Color darkOutline = Color(0xFF938F99);
+  Color darkOutlineVariant = Color(0xFF49454F);
+  Color darkShadow = Color(0xFF000000);
+  Color darkScrim = Color(0xFF000000);
+  Color darkInverseSurface = Color(0xFFE6E0E9);
+  Color darkOnInverseSurface = Color(0xFF313033);
+  Color darkInversePrimary = Color(0xFF48319D);
+  Color darkSurfaceTint = Color(0xFF9575FF);
+  Color darkOnSurfaceVariant = Color(0xFFCAC4D0);
+
+  // Common Colors
+  Color transparent = Colors.transparent;
+
+  // Additional Light Theme Colors
+  Color lightPrimaryFixedDim = Color(0xFFC4B5FF);
+  Color lightSecondaryFixedDim = Color(0xFFCCC2DC);
+  Color lightOnSecondaryFixed = Color(0xFF1D192B);
+  Color lightTertiaryFixedDim = Color(0xFFD0BCFF);
+  Color lightOnTertiaryFixedVariant = Color(0xFF7F39FB);
+  Color lightSurfaceDim = Color(0xFFDDD8E1);
+  Color lightSurfaceBright = Color(0xFFFDF8FD);
+  Color lightSurfaceContainerLow = Color(0xFFF7F2FA);
+  Color lightSurfaceContainer = Color(0xFFF1ECF4);
+  Color lightSurfaceContainerHigh = Color(0xFFEBE6EE);
+  Color lightSurfaceContainerHighest = Color(0xFFE6E0E9);
+
+  // Additional Dark Theme Colors
+  Color darkPrimaryFixedDim = Color(0xFFC4B5FF);
+  Color darkOnPrimaryFixedVariant = Color(0xFF48319D);
+  Color darkSecondaryFixedDim = Color(0xFFCCC2DC);
+  Color darkTertiaryFixedDim = Color(0xFFD0BCFF);
+  Color darkOnTertiaryFixedVariant = Color(0xFF7F39FB);
+  Color darkSurfaceDim = Color(0xFF141218);
+  Color darkSurfaceBright = Color(0xFF3B383E);
+  Color darkSurfaceContainerLow = Color(0xFF1D1B20);
+  Color darkSurfaceContainer = Color(0xFF211F26);
+  Color darkSurfaceContainerHigh = Color(0xFF2B2930);
+  Color darkSurfaceContainerHighest = Color(0xFF36343B);
 }
