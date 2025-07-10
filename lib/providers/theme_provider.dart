@@ -1,4 +1,4 @@
-import '../utils/common_libs.dart';
+import '../utils/imports/common_libs.dart';
 
 class ThemeProvider extends ChangeNotifier {
   ThemeData _currentTheme = customLightTheme;

@@ -1,4 +1,4 @@
-import '../utils/common_libs.dart';
+import 'utils/imports/common_libs.dart';
 
 Future<void> main() async {
   try {

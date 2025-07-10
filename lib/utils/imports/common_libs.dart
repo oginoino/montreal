@@ -28,29 +28,29 @@ export 'package:go_router/go_router.dart';
 // =============================================================================
 
 // Main App
-export '../app/montreal_app.dart';
+export '../../app/montreal_app.dart';
 
 // Configuration
-export '../config/bootstrap.dart';
-export '../config/environment.dart';
-export '../config/di.dart';
-export '../config/locale_config.dart';
+export '../../config/bootstrap.dart';
+export '../../config/environment.dart';
+export '../../config/di.dart';
+export '../../config/locale_config.dart';
 
 // =============================================================================
 // STATE PROVIDERS
 // =============================================================================
 
-export '../providers/register_provider.dart';
-export '../providers/theme_provider.dart';
-export '../providers/locale_provider.dart';
+export '../../providers/register_provider.dart';
+export '../../providers/theme_provider.dart';
+export '../../providers/locale_provider.dart';
 
 // =============================================================================
 // ROUTING
 // =============================================================================
 
 export 'package:montreal/route/app_route.dart';
-export '../route/handlers/handler_redirect.dart';
-export '../route/routes.dart';
+export '../../route/handlers/handler_redirect.dart';
+export '../../route/routes.dart';
 export 'package:montreal/route/router.dart';
 
 // =============================================================================
@@ -67,20 +67,20 @@ export 'package:montreal/utils/constants/string_constants.dart';
 // =============================================================================
 
 // Themes
-export '../view/theme/light_theme.dart';
-export '../view/theme/dark_theme.dart';
+export '../../view/theme/light_theme.dart';
+export '../../view/theme/dark_theme.dart';
 
 // Pages
-export '../view/page/home_page.dart';
+export '../../view/page/home_page.dart';
 
 // Components - Screens
-export '../view/component/screen/scaffold_sliver.dart';
+export '../../view/component/screen/scaffold_sliver.dart';
 
 // Components - App Bars
-export '../view/component/app_bar/custom_sliver_app_bar.dart';
+export '../../view/component/app_bar/custom_sliver_app_bar.dart';
 
 // Components - UI
 // Selectors
-export '../view/component/ui/language_selector.dart';
+export '../../view/component/ui/language_selector.dart';
 // Buttons
-export '../view/component/ui/theme_toggle_button.dart';
+export '../../view/component/ui/theme_toggle_button.dart';
