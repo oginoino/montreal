@@ -1,6 +1,5 @@
-import '../../../utils/common_libs.dart';
-import '../ui/language_selector.dart';
-import '../ui/theme_toggle_button.dart';
+import '../../../../utils/imports/common_libs.dart';
+
 
 class CustomSliverAppBar extends StatelessWidget {
   const CustomSliverAppBar({super.key});
