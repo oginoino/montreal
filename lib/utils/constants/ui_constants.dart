@@ -18,4 +18,37 @@ class UIConstants {
   double spacing16 = 64.0; // 8 * 8
   double spacing20 = 80.0; // 8 * 10
   double spacing24 = 96.0; // 8 * 12
+
+  // Escala de opacidade
+  static const double opacity10 = 0.1;
+  static const double opacity20 = 0.2;
+  static const double opacity30 = 0.3;
+  static const double opacity40 = 0.4;
+  static const double opacity50 = 0.5;
+  static const double opacity60 = 0.6;
+  static const double opacity70 = 0.7;
+  static const double opacity80 = 0.8;
+  static const double opacity90 = 0.9;
+
+  // BorderRadius
+  static const double radius4 = 4.0;
+  static const double radius8 = 8.0;
+  static const double radius12 = 12.0;
+  static const double radius16 = 16.0;
+  static const double radius20 = 20.0;
+  static const double radius24 = 24.0;
+
+  // Elevation
+  static const double elevation2 = 2.0;
+  static const double elevation4 = 4.0;
+  static const double elevation6 = 6.0;
+  static const double elevation8 = 8.0;
+  static const double elevation12 = 12.0;
+  static const double elevation16 = 16.0;
+
+  // Border Width
+  static const double borderWidth1 = 1.0;
+  static const double borderWidth2 = 2.0;
+  static const double borderWidth3 = 3.0;
+  static const double borderWidth4 = 4.0;
 }

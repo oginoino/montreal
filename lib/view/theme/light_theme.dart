@@ -110,7 +110,7 @@ AppBarTheme _lightAppBarTheme = AppBarTheme(
   backgroundColor: _lightColorScheme.surface,
   foregroundColor: _lightColorScheme.onSurface,
   elevation: 0,
-  scrolledUnderElevation: 4,
+  scrolledUnderElevation: UIConstants.elevation4,
   shadowColor: _lightColorScheme.shadow,
   surfaceTintColor: _lightColorScheme.surfaceTint,
   titleTextStyle: TextStyle(
