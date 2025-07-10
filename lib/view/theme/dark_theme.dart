@@ -1,4 +1,4 @@
-import '../../../utils/common_libs.dart';
+import '../../utils/imports/common_libs.dart';
 
 ColorScheme _darkColorScheme = ColorScheme.dark(
   // Primary colors

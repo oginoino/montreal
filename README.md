@@ -23,6 +23,9 @@ lib/
 │   ├── di.dart         # Injeção de dependência
 │   ├── environment.dart # Variáveis de ambiente
 │   └── locale_config.dart # Configuração de idiomas
+├── main.dart
+├── model/              # 📊 Modelos de dados
+│   └── locale_data.dart
 ├── providers/          # 🔄 Gerenciamento de estado
 │   ├── locale_provider.dart
 │   ├── register_provider.dart

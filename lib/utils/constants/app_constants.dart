@@ -1,4 +1,4 @@
-import '../common_libs.dart';
+import '../imports/common_libs.dart';
 
 class AppConstants {
   String appName = Environment.appName ?? 'Montreal';

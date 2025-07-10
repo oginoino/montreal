@@ -1,4 +1,4 @@
-import '../common_libs.dart';
+import '../imports/common_libs.dart';
 
 /// Classe para centralizar todas as strings da aplicação
 /// Esta abordagem facilita a internacionalização futura
