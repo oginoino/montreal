@@ -237,4 +237,18 @@ flutter run
 
 ---
 
+## 📄 Licença
+
+Este projeto está licenciado sob a **MIT License** - veja o arquivo <mcfile name="LICENSE" path="c:\Users\ginal\projects\montreal\LICENSE"></mcfile> para detalhes.
+
+### **O que isso significa?**
+- ✅ **Uso comercial**: Pode usar em projetos comerciais
+- ✅ **Modificação**: Pode modificar o código livremente
+- ✅ **Distribuição**: Pode distribuir o código
+- ✅ **Uso privado**: Pode usar para projetos privados
+- ⚠️ **Sem garantia**: Software fornecido "como está"
+- 📋 **Atribuição**: Deve manter o aviso de copyright
+
+---
+
 💡 **Dica**: Este template é um ponto de partida. Adapte-o às necessidades específicas do seu projeto mantendo os princípios arquiteturais fundamentais.
