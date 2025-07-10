@@ -167,14 +167,39 @@ AppBarTheme _darkAppBarTheme = AppBarTheme(
   scrolledUnderElevation: UIConstants.elevation4,
   shadowColor: _darkColorScheme.shadow,
   surfaceTintColor: _darkColorScheme.surfaceTint,
+  shape: null,
+  iconTheme: IconThemeData(
+    color: _darkColorScheme.onSurface,
+    size: 24,
+  ),
+  actionsIconTheme: IconThemeData(
+    color: _darkColorScheme.onSurface,
+    size: 24,
+  ),
+  centerTitle: false,
+  titleSpacing: 16.0,
+  toolbarHeight: 64.0,
+  leadingWidth: 56.0,
   titleTextStyle: TextStyle(
     fontFamily: 'SanFranciscoPro',
     fontSize: 22,
     fontWeight: FontWeight.w600,
     color: _darkColorScheme.onSurface,
   ),
-  iconTheme: IconThemeData(color: _darkColorScheme.onSurface, size: 24),
-  actionsIconTheme: IconThemeData(color: _darkColorScheme.onSurface, size: 24),
+  toolbarTextStyle: TextStyle(
+    fontFamily: 'SanFranciscoPro',
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    color: _darkColorScheme.onSurface,
+  ),
+  systemOverlayStyle: SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarIconBrightness: Brightness.light,
+    statusBarBrightness: Brightness.dark,
+    systemNavigationBarColor: _darkColorScheme.surface,
+    systemNavigationBarIconBrightness: Brightness.light,
+  ),
+  actionsPadding: const EdgeInsets.symmetric(horizontal: 8.0),
 );
 
 ThemeData customDarkTheme = ThemeData(

@@ -5,6 +5,7 @@
 // Flutter Core
 export 'package:flutter/material.dart';
 export 'package:flutter/cupertino.dart' hide RefreshCallback;
+export 'package:flutter/services.dart';
 
 // Localization
 export 'package:flutter_localizations/flutter_localizations.dart';

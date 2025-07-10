@@ -10,7 +10,7 @@ ColorScheme _lightColorScheme = const ColorScheme.light(
   primaryFixedDim: Color(0xFFC4B5FF),
   onPrimaryFixed: Color(0xFF1C1B33),
   onPrimaryFixedVariant: Color(0xFF48319D),
-  
+
   // Secondary colors
   secondary: Color(0xFF1F1D47),
   onSecondary: Color(0xFFFFFFFF),
@@ -20,7 +20,7 @@ ColorScheme _lightColorScheme = const ColorScheme.light(
   secondaryFixedDim: Color(0xFFCCC2DC),
   onSecondaryFixed: Color(0xFF1D192B),
   onSecondaryFixedVariant: Color(0xFF49454F),
-  
+
   // Tertiary colors
   tertiary: Color(0xFFC427FB),
   onTertiary: Color(0xFFFFFFFF),
@@ -30,13 +30,13 @@ ColorScheme _lightColorScheme = const ColorScheme.light(
   tertiaryFixedDim: Color(0xFFD0BCFF),
   onTertiaryFixed: Color(0xFF36003C),
   onTertiaryFixedVariant: Color(0xFF7F39FB),
-  
+
   // Error colors
   error: Color(0xFFBA1A1A),
   onError: Color(0xFFFFFFFF),
   errorContainer: Color(0xFFFFDAD6),
   onErrorContainer: Color(0xFF410002),
-  
+
   // Surface colors
   surface: Color(0xFFE0D9FF),
   onSurface: Color(0xFF1C1B33),
@@ -47,11 +47,11 @@ ColorScheme _lightColorScheme = const ColorScheme.light(
   surfaceContainer: Color(0xFFF1ECF4),
   surfaceContainerHigh: Color(0xFFEBE6EE),
   surfaceContainerHighest: Color(0xFFE6E0E9),
-  
+
   // Outline colors
   outline: Color(0xFF79747E),
   outlineVariant: Color(0xFFCAC4D0),
-  
+
   // Other colors
   shadow: Color(0xFF000000),
   scrim: Color(0xFF000000),
@@ -167,14 +167,33 @@ AppBarTheme _lightAppBarTheme = AppBarTheme(
   scrolledUnderElevation: UIConstants.elevation4,
   shadowColor: _lightColorScheme.shadow,
   surfaceTintColor: _lightColorScheme.surfaceTint,
+  shape: null,
+  iconTheme: IconThemeData(color: _lightColorScheme.onSurface, size: 24),
+  actionsIconTheme: IconThemeData(color: _lightColorScheme.onSurface, size: 24),
+  centerTitle: false,
+  titleSpacing: 16.0,
+  toolbarHeight: 64.0,
+  leadingWidth: 56.0,
   titleTextStyle: TextStyle(
     fontFamily: 'SanFranciscoPro',
     fontSize: 22,
     fontWeight: FontWeight.w600,
     color: _lightColorScheme.onSurface,
   ),
-  iconTheme: IconThemeData(color: _lightColorScheme.onSurface, size: 24),
-  actionsIconTheme: IconThemeData(color: _lightColorScheme.onSurface, size: 24),
+  toolbarTextStyle: TextStyle(
+    fontFamily: 'SanFranciscoPro',
+    fontSize: 16,
+    fontWeight: FontWeight.w400,
+    color: _lightColorScheme.onSurface,
+  ),
+  systemOverlayStyle: SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarIconBrightness: Brightness.dark,
+    statusBarBrightness: Brightness.light,
+    systemNavigationBarColor: _lightColorScheme.surface,
+    systemNavigationBarIconBrightness: Brightness.dark,
+  ),
+  actionsPadding: const EdgeInsets.symmetric(horizontal: 8.0),
 );
 
 ThemeData customLightTheme = ThemeData(
