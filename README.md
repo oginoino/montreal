@@ -97,7 +97,7 @@ Organização modular que separa claramente responsabilidades:
 - **Temas centralizados**: Cores, tipografia e espaçamentos consistentes
 - **Dark/Light mode**: Suporte nativo a múltiplos temas
 - **Responsividade**: Adaptação automática a diferentes telas
-- **Fonte personalizada**: San Francisco Pro Text integrada
+- **Fonte personalizada**: San Francisco Pro Text integrada (⚠️ **Licença necessária**)
 - **Customização**: Fácil personalização da identidade visual
 
 #### 🎨 **Sistema de Temas Claro/Escuro**
@@ -211,7 +211,7 @@ flutter run
 - **cupertino_icons**: Ícones do iOS
 
 ### **Recursos Inclusos**
-- **Fonte San Francisco Pro**: Tipografia premium da Apple
+- **Fonte San Francisco Pro**: Tipografia premium da Apple (⚠️ **Requer licença de uso**)
 - **Estrutura modular**: Organização escalável de código
 - **Configuração de ambiente**: Setup para diferentes ambientes
 
@@ -254,6 +254,7 @@ flutter:
 **Fontes:**
 ```dart
 // Usando a fonte San Francisco Pro configurada
+// ⚠️ IMPORTANTE: Certifique-se de ter licença para uso da fonte
 Text(
   'Texto com fonte personalizada',
   style: TextStyle(
@@ -283,6 +284,20 @@ const String apiUrl = String.fromEnvironment('API_URL');
 - 🔒 **Não commite** arquivos `.env` com dados sensíveis
 - 📱 **Use múltiplas resoluções** para imagens (1x, 2x, 3x)
 - ⚡ **Otimize tamanhos** de imagens para melhor performance
+- ⚖️ **Verifique licenças**: Certifique-se de ter direitos de uso para fontes e recursos
+
+### **⚠️ Aviso Importante sobre Licenciamento**
+A fonte **San Francisco Pro** incluída neste template é propriedade da Apple Inc. e está sujeita aos termos de licenciamento da Apple. Antes de usar esta fonte em seu projeto:
+
+- ✅ **Para desenvolvimento iOS/macOS**: Geralmente permitido sob os termos de desenvolvedor Apple
+- ⚠️ **Para outros usos**: Verifique os termos de licenciamento da Apple
+- 🔄 **Alternativa recomendada**: Considere usar fontes do Google Fonts ou outras fontes com licenças abertas
+- 📋 **Responsabilidade**: É sua responsabilidade garantir conformidade com os termos de licenciamento
+
+**Fontes alternativas sugeridas:**
+- **Inter**: Fonte moderna e versátil (Google Fonts)
+- **Roboto**: Fonte padrão do Material Design (Google Fonts)
+- **Open Sans**: Fonte legível e profissional (Google Fonts)
 
 ## 🎨 Benefícios para Novos Projetos
 
