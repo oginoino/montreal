@@ -15,6 +15,12 @@ Este projeto foi estruturado para facilitar decisões arquiteturais cruciais no 
 ## 📁 Estrutura do Projeto
 
 ```
+assets/                 # 📁 Recursos estáticos da aplicação
+├── fonts/              # 🔤 Fontes personalizadas
+│   └── sf-pro-text-regular/
+│       └── SF-Pro-Text-Regular.otf
+└── .env               # 🔧 Variáveis de ambiente (opcional)
+
 lib/
 ├── app/                 # 🏗️ Configuração principal da aplicação
 │   └── montreal_app.dart
@@ -208,6 +214,75 @@ flutter run
 - **Fonte San Francisco Pro**: Tipografia premium da Apple
 - **Estrutura modular**: Organização escalável de código
 - **Configuração de ambiente**: Setup para diferentes ambientes
+
+## 📁 Pasta Assets e Configuração
+
+### **Estrutura da Pasta Assets**
+A pasta `assets/` centraliza todos os recursos estáticos da aplicação:
+
+```
+assets/
+├── fonts/              # Fontes personalizadas
+│   └── sf-pro-text-regular/
+│       └── SF-Pro-Text-Regular.otf
+├── images/             # Imagens da aplicação (adicione conforme necessário)
+│   ├── icons/          # Ícones personalizados
+│   └── illustrations/  # Ilustrações e gráficos
+└── .env               # Variáveis de ambiente (opcional)
+```
+
+### **Relação com pubspec.yaml**
+Todos os assets devem ser declarados no `pubspec.yaml` para serem incluídos no build:
+
+```yaml
+flutter:
+  # Fontes personalizadas
+  fonts:
+    - family: SanFranciscoPro
+      fonts:
+        - asset: assets/fonts/sf-pro-text-regular/SF-Pro-Text-Regular.otf
+  
+  # Assets gerais (descomente e configure conforme necessário)
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
+  #   - assets/.env
+```
+
+### **Como Usar Assets**
+
+**Fontes:**
+```dart
+// Usando a fonte San Francisco Pro configurada
+Text(
+  'Texto com fonte personalizada',
+  style: TextStyle(
+    fontFamily: 'SanFranciscoPro',
+    fontSize: 16,
+  ),
+)
+```
+
+**Imagens (quando adicionadas):**
+```dart
+// Referenciando imagens da pasta assets
+Image.asset('assets/images/logo.png')
+Icon(AssetImage('assets/icons/custom_icon.png'))
+```
+
+**Variáveis de Ambiente:**
+```dart
+// Carregando arquivo .env (se configurado)
+// Útil para URLs de API, chaves, etc.
+const String apiUrl = String.fromEnvironment('API_URL');
+```
+
+### **Boas Práticas para Assets**
+- 📝 **Sempre declare** novos assets no `pubspec.yaml`
+- 🗂️ **Organize por tipo**: fontes, imagens, ícones em subpastas
+- 🔒 **Não commite** arquivos `.env` com dados sensíveis
+- 📱 **Use múltiplas resoluções** para imagens (1x, 2x, 3x)
+- ⚡ **Otimize tamanhos** de imagens para melhor performance
 
 ## 🎨 Benefícios para Novos Projetos
 
