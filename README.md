@@ -163,7 +163,10 @@ cd montreal
 # 2. Instale as dependências
 flutter pub get
 
-# 3. Execute a aplicação
+# 3. Execute a aplicação com variáveis de ambiente
+flutter run --dart-define-from-file=assets/.env
+
+# Ou execute sem variáveis de ambiente (modo básico)
 flutter run
 ```
 
@@ -231,6 +234,20 @@ flutter run
 - [Provider Pattern](https://pub.dev/packages/provider)
 - [Flutter Architecture](https://docs.flutter.dev/development/data-and-backend/state-mgmt)
 - [Material Design 3](https://m3.material.io/)
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a **MIT License** - veja o arquivo <mcfile name="LICENSE" path="c:\Users\ginal\projects\montreal\LICENSE"></mcfile> para detalhes.
+
+### **O que isso significa?**
+- ✅ **Uso comercial**: Pode usar em projetos comerciais
+- ✅ **Modificação**: Pode modificar o código livremente
+- ✅ **Distribuição**: Pode distribuir o código
+- ✅ **Uso privado**: Pode usar para projetos privados
+- ⚠️ **Sem garantia**: Software fornecido "como está"
+- 📋 **Atribuição**: Deve manter o aviso de copyright
 
 ---
 
