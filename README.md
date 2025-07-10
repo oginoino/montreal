@@ -163,7 +163,10 @@ cd montreal
 # 2. Instale as dependências
 flutter pub get
 
-# 3. Execute a aplicação
+# 3. Execute a aplicação com variáveis de ambiente
+flutter run --dart-define-from-file=assets/.env
+
+# Ou execute sem variáveis de ambiente (modo básico)
 flutter run
 ```
 
