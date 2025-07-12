@@ -12,6 +12,32 @@ Este projeto foi estruturado para facilitar decisões arquiteturais cruciais no 
 - ✅ **Sistema de temas** flexível e customizável
 - ✅ **Organização de código** clara e maintível
 
+## 🍕 Implementações de Referência
+
+Veja exemplos práticos de como este template pode ser usado em projetos reais:
+
+### **Reelex - App de Delivery**
+🔗 **Repositório**: [https://github.com/GinoCodeSpace/reelex](https://github.com/GinoCodeSpace/reelex)
+
+O **Reelex** é uma implementação completa do template Montreal, demonstrando como construir um aplicativo de delivery de comida com todas as funcionalidades essenciais:
+
+**Funcionalidades Implementadas:**
+- 🏪 **Catálogo de Restaurantes**: Navegação por restaurantes e cardápios
+- 🛒 **Carrinho de Compras**: Adição/remoção de itens com cálculo automático
+- 📋 **Gestão de Pedidos**: Acompanhamento de pedidos ativos e histórico
+- 🎨 **Temas Claro/Escuro**: Interface adaptável com mudança dinâmica
+- 🌍 **Suporte a Idiomas**: Localização para múltiplos idiomas
+- 📱 **Design Responsivo**: Interface otimizada para diferentes telas
+
+**Recursos Técnicos Aplicados:**
+- 🔄 **Provider**: Gerenciamento de estado para carrinho, pedidos e configurações
+- 🧭 **Go Router**: Navegação type-safe entre páginas
+- 🎨 **UI Constants**: Sistema de design consistente
+- 📱 **Responsive Design**: Adaptação automática para diferentes dispositivos
+- 🌙 **Theme Switching**: Alternância dinâmica entre temas
+
+> 💡 **Use como referência**: O Reelex demonstra na prática como aplicar os padrões arquiteturais do Montreal em um projeto real e completo.
+
 ## 📁 Estrutura do Projeto
 
 ```
